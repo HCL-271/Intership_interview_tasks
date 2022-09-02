@@ -1,0 +1,13 @@
+На наборе из 100 строк выяснить, какое распределение в каком случае
+def generate1():  
+    a = np.random.uniform(0,1)
+    b = np.random.uniform(0,1)  
+    return a * math.cos(2 * math.pi * b), a * math.sin(2 * math.pi * b)
+    OR  
+ def generate2():  
+    while True:  
+        x = np.random.uniform(-1, 1)  
+        y = np.random.uniform(-1, 1)  
+        if x ** 2 + y ** 2 > 1:  
+            continue  
+        return (x, y)
